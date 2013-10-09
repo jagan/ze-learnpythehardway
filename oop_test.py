@@ -62,20 +62,21 @@ def convert(snippet, phrase):
 
 
 # keep going until they hit CTRL-D
-try:
-    while True:
-        snippets = PHRASES.keys()
-        random.shuffle(snippets)
+if __name__ == "__main__":
+    try:
+        while True:
+            snippets = PHRASES.keys()
+            random.shuffle(snippets)
 
-        for snippet in snippets:
-            phrase = PHRASES[snippet]
-            question, answer = convert(snippet, phrase)
-            if PHRASE_FIRST:
-                question, answer = answer, question
+            for snippet in snippets:
+                phrase = PHRASES[snippet]
+                question, answer = convert(snippet, phrase)
+                if PHRASE_FIRST:
+                    question, answer = answer, question
 
-            print question
+                print question
 
-            raw_input("> ")
-            print "ANSWER:  %s\n\n" % answer
-except EOFError:
-    print "\nBye"
+                raw_input("> ")
+                print "ANSWER:  %s\n\n" % answer
+    except EOFError:
+        print "\nBye"
