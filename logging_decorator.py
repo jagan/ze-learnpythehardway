@@ -14,11 +14,11 @@ def log_args(func):
 def add(x, y):
     return x + y
 
+@log_args
 def add3(x, y, z):
     return x + y + z
 
 add = log_args(add)
-add3 = log_args(add3)
 
 if __name__ == "__main__":
     log.debug("add(5, 4):")
