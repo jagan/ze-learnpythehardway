@@ -1,7 +1,7 @@
 "Iterator that iterates over a given sequence, in reverse"
 
 class Reverse(object):
-    'Reverse iterator'
+    'Reverse iterable + iterator'
     def __init__(self, seq):
         self.seq = seq
         self.index = len(seq) - 1
