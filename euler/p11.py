@@ -83,6 +83,8 @@ def indexes_diagonally_down_to_up(x, y, num):
 def all_indexes(x, y, num):
     funcs = [indexes_left_to_right, indexes_up_to_down, indexes_diagonally_up_to_down, indexes_diagonally_down_to_up]
     for func in funcs:
+        print list(func(20, 20, 4))
+    for func in funcs:
         for indexes in func(x, y, num):
             yield indexes
 
@@ -106,8 +108,4 @@ def p():
     print biggest
 
 if __name__ == "__main__":
-    print list(indexes_left_to_right(20, 20, 4))
-    print list(indexes_up_to_down(20, 20, 4))
-    print list(indexes_diagonally_up_to_down(20, 20, 4))
-    print list(indexes_diagonally_down_to_up(20, 20, 4))
     p()
