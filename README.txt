@@ -1,4 +1,5 @@
 Builtin Modules
+--------------------------
 
 * Sets
 * datetime module
@@ -23,14 +24,17 @@ Builtin Modules
 * argparse vs optparse
 
 Python Package installation tools
+--------------------------------------
 * easy_install
 * pip
 
 Python Packaging Tools
+---------------------------
 * Distutils
 * Setuptools
 
 Virtual Python Environment Tools
+-----------------------------------
 * virtualenv
 * buildout
 
@@ -42,11 +46,12 @@ Python Source Code Analyzer Tools
 * pyflakes
 * CloneDigger(helps in finding the duplicate code)
 
-Python Concepts/Articles:--
+Python Concepts/Articles:
+------------------------------------
 
-* Python Error Handling(try/except/else/finally)
-* Python builtin functins:- http://docs.python.org/2/library/functions.html
-* Iterators, Generators, and Coroutines.
+* Python Error Handling (try/except/else/finally)
+* Python builtin functions:- http://docs.python.org/2/library/functions.html
+* Iterators, Generators, and Co-routines.
 * enumerate, lambda function, closures, decorators, static and class methods
 * global interpreter lock
 * Context managers
