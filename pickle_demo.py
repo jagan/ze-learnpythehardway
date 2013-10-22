@@ -5,7 +5,7 @@ FILE_NAME = "dump.pyobj"
 
 def dump_an_obj(obj, file):
     with open(file, "wb") as f:
-        pickle.dump(obj, f, 2) # Pickle protocol version 2
+        pickle.dump(obj, f) # Pickle version 0
 
 def read_the_obj(file):
     with open(file, "rb") as f:
