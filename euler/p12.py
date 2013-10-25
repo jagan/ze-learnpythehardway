@@ -22,10 +22,11 @@ from sys import maxint
 from math import sqrt
 
 def triangle_number():
-    i = 500
+    i = num = 1
     while i < maxint:
-        yield (i, i * (i + 1) / 2)
+        yield (i, num)
         i += 1
+        num += i
 
 def number_of_divisors(number):
     sqrtx = int(sqrt(number))
